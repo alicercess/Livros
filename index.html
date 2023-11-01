@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Biblioteca de Livros</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+    <header>
+        <h1>Alicerces</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Livros</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="ultimasatualizacoes">
+        <h2>Últimas Atualizações</h2>
+    </div>
+    <main>
+        <section class="livro-card" data-livro="1">
+            <img src="../img/eassimqueacaba.jpg" alt="Livro 1">
+            <h2>É assim que acaba</h2>
+        </section>
+
+        <section class="livro-card" data-livro="2">
+            <img src="../livros/img/saborosocadaver.jpg" alt="Livro 2">
+            <h2>Saboroso Cadáver</h2>
+        </section>
+
+        <section class="livro-card" data-livro="3">
+            <img src="img/avidamentirosadosadultos.jpg" alt="Livro 3">
+            <h2>A vida mentirosa dos adultos</h2>
+        </section>
+
+        <section class="livro-card" data-livro="4">
+            <img src="img/apacientesilenciosa.jpg" alt="Livro 4">
+            <h2>A paciente silenciosa</h2>
+        </section>
+
+        <section class="livro-card" data-livro="5">
+            <img src="img/ossetemaridosdeeverlynhugo.jpg" alt="Livro 5">
+            <h2>Os sete maridos de Evelyn Hugo</h2>
+        </section>
+    </main>
+
+ <!-- Modal único para todos os livros -->
+<div id="livroModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <div class="livro-info">
+            <img id="livroImagem" src="" alt="Imagem do Livro">
+            <div class="livro-text">
+                <h2 id="livroTitulo"></h2>
+                <p id="livroAutor"></p>
+                <p id="livroClassificacao"></p>
+                <p id="livroAnoLancamento"></p>
+                <p id="livroSinopse"></p>
+                <a id="pdfButton" href="#" target="_blank">Ver PDF</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <script src="script.js"></script>
+    <footer class="rodape">
+        <p>&copy; 2023 Alicerce</p>
+    </footer>
+    
+</body>
+</html>
+
+

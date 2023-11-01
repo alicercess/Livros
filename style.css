@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, rgb(122, 70, 38), rgb(215, 170, 142));
+}
+
+/* Estilizando o cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #522e15; /* Cor de fundo que combina com madeira */
+    color: #c29e75;
+    padding: 20px 40px; /* Adapte o padding conforme desejado */
+}
+header h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombreamento no texto do h1 */
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+    color: #c29e75;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+main {
+    max-width: 800px;
+    margin: 3%;
+    padding: 20px;
+    display: flex;
+    cursor: pointer;
+}
+
+.livro-card {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    width: 20%;
+    font-size: 70%;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+.livro-card:hover {
+    transform: scale(1.1); /* Aumentar em 10% */
+    filter: brightness(80%); /* Escurecer 20% */
+}
+
+.livro-card img {
+    max-width: 100%
+}
+
+.paginação ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+
+.paginação li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.paginação a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
+/* Adicione este código ao seu arquivo CSS (style.css) */
+/* Estilo do Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adiciona um tom fosco transparente */
+    overflow: auto;
+}
+
+
+.modal-content {
+    position: absolute;
+    background-color:  rgb(122, 70, 38);
+    padding: 20px;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    color: #eed4b2;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.livro-info {
+    display: flex;
+    align-items: center;
+}
+.livro-info img {
+    max-width: 40%;
+    max-height: 40%;
+    margin-right: 20px;
+}
+.livro-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#pdfButton {
+    background-color: #4CAF50;
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+#livroImagem {
+    max-width: 20%;
+    max-height: 20%;
+    margin-right: 20px;
+}
+
+.rodape {
+    color: #c29e75;
+    background-color: #522e15;
+}
