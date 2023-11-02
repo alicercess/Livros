@@ -10,27 +10,29 @@
 </head>
 <body>
     <header>
-        <h1>Alicerces</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Livros</a></li>
-                <li><a href="#">Sobre</a></li>
-            </ul>
-        </nav>
+        <h1>Alicerses</h1>
+        <div class="search-bar">
+            <input type="text" id="search-bar" placeholder="Pesquisar livros" oninput="searchBooks()">
+            <button onclick="searchBooks()">Pesquisar</button>
+          </div>
     </header>
     
+    
+    
     <div class="ultimasatualizacoes">
-        <h2>Últimas Atualizações</h2>
+        <h2>Catálogo</h2>
+    </div>
+    <div id="livrosEncontrados" class="livros-container">
+        <!-- Aqui serão exibidos os cards dos livros encontrados -->
     </div>
     <main>
         <section class="livro-card" data-livro="1">
-            <img src="../img/eassimqueacaba.jpg" alt="Livro 1">
+            <img src="img/eassimqueacaba.jpg" alt="Livro 1">
             <h2>É assim que acaba</h2>
         </section>
 
         <section class="livro-card" data-livro="2">
-            <img src="../livros/img/saborosocadaver.jpg" alt="Livro 2">
+            <img src="img/saborosocadaver.jpg" alt="Livro 2">
             <h2>Saboroso Cadáver</h2>
         </section>
 
@@ -48,6 +50,56 @@
             <img src="img/ossetemaridosdeeverlynhugo.jpg" alt="Livro 5">
             <h2>Os sete maridos de Evelyn Hugo</h2>
         </section>
+        <section class="livro-card" data-livro="6">
+            <img src="img/oladofeiodoamor.jpg" alt="Livro 6">
+            <h2>O lado feio do amor</h2>
+        </section>
+
+        <section class="livro-card" data-livro="7">
+            <img src="img/vergonha.jpg" alt="Livro 7">
+            <h2>Vergonha</h2>
+        </section>
+
+        <section class="livro-card" data-livro="8">
+            <img src="img/opaciente.jpg" alt="Livro 8">
+            <h2>O Paciente</h2>
+        </section>
+
+        <section class="livro-card" data-livro="9">
+            <img src="img/arainhavermelha.jpg" alt="Livro 9">
+            <h2>A Rainha Vermelha</h2>
+        </section>
+
+        <section class="livro-card" data-livro="10">
+            <img src="img/abibliotecadameianoite.jpg" alt="Livro 10">
+            <h2>Blibioteca Da meia noite</h2>
+        </section>
+
+        <section class="livro-card" data-livro="11">
+            <img src="img/deixadaparatras.jpg" alt="Livro 10">
+            <h2>Deixada para trás</h2>
+        </section>
+
+        <section class="livro-card" data-livro="12">
+            <img src="img/ocolecionador.jpg" alt="Livro 10">
+            <h2>O Colecionador</h2>
+        </section>
+
+        <section class="livro-card" data-livro="13">
+            <img src="img/ohomemdegiz.jpg" alt="Livro 10">
+            <h2>O Homem de giz</h2>
+        </section>
+
+        <section class="livro-card" data-livro="14">
+            <img src="img/osdoismorremnofinal.jpg" alt="Livro 10">
+            <h2>No final morrem os dois</h2>
+        </section>
+
+        <section class="livro-card" data-livro="15">
+            <img src="img/ojardimdasborboletas.jpg" alt="Livro 10">
+            <h2>Jardim das borboletas</h2>
+        </section>
+
     </main>
 
  <!-- Modal único para todos os livros -->
